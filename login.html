@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            margin-left: 500px;
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+        }
+        li{
+            
+            margin-top: 10px;
+            list-style: none;
+            text-decoration: none;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            margin-right: 100px;
+            font-size: 17px;
+        }
+        nav{
+            position: fixed;
+    align-items: center;
+      left: 0;
+      right: 0;
+            top: 0px;
+            height: 70px;
+            background-color: black;
+        }
+        .sd {
+      margin-top: 50px;
+      text-align: center;
+    }
+    .sd a {
+      display: inline-block;
+      margin: 10px 20px;
+      color: blue;
+      font-weight: bold;
+    }
+    .f input[type="text"],
+    .f input[type="password"] {
+      width: 250px;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .f input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .f {
+     
+        margin-left: 600px;
+  border: 2px solid black;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 10px 25px black;
+  border-radius: 10px;
+
+  margin-top: 200px;
+  background-color: #ffff;
+}
+.bt{
+  border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="f">
+            <h1 style="margin-left: 100px;">Login</h1>
+            <form >
+                <label>
+                    Username:<br>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                  </label><br>
+                <label>
+                  Password:<br>
+                  <input type="password" name="pass" placeholder="Password" required>
+                </label><br>
+               
+               <input type="checkbox"> Terms and condition <br> Don't have an account <a href="Register.html" style="color: blue;">register</a><br>
+               <br>
+                <button type="submit" class="bt" style="width: 200px; background-color: rgb(139, 0, 130); width: 100%; height: 50px; ">Submit</button>
+              
+              </form>
+
+              
+</div>
+
+       
+    </section>
+</body>
+</html>

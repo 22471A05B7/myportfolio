@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            margin-left: 500px;
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+        }
+        li{ 
+            margin-top: 10px;
+            list-style: none;
+            text-decoration: none;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            margin-right: 100px;
+            font-size: 17px;
+        }
+        li a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+li a:focus {
+  color: rgb(255, 0, 230);
+  text-decoration: none;
+}
+        nav{
+       
+            position: fixed;
+    align-items: center;
+      left: 0;
+      right: 0;
+            top: 0px;
+            height: 70px;
+            background-color: black;
+        }
+        .cc{
+            
+            display: flex;
+        }
+        .card1{
+            border: 2 black;
+        }
+       
+  .card1 {
+    
+    border: 5px solid white; 
+    border-radius: 20px;     
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    background-color: #f9f9f9;
+  }
+
+  .card1 img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .card1 p {
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <section id="projects">
+        <h1 style="margin-top: 400px; margin-left: 700px; position: relative; top: 100px;">Projects</h1>
+        <div class="cc">
+            <div class="card1">
+                <img src="Images/pro.png" height="200px" width="500px"  border-radius: 20px; border-color: black;"><br>
+                <p>Title:&nbsp;&nbsp;Pet Care</p>
+                <p>Technology:&nbsp;&nbsp; React.js</p>
+                <p>In Angular,Lorem ipsum dolor silaudantium I developed proje, a stylish login/registration flow, a rice marketing portal connecting farmers and dealers, and</p>
+            </div>
+            <div class="card1">
+                <img src="Images/and.png" height="200px" width="500px">
+                <p>Title:&nbsp;&nbsp;Rice Marketting</p>
+                <p>Technology:&nbsp;&nbsp; Angular</p>
+                <p>a mechanical services app that shows nearby mechanics based on location and vehicle type. On Android, I built a similar mechanical services app with ImageView navigation, location-based shop discovery, and a call feature using CardView.</p>
+            </div>
+            <div class="card1">
+                <img src="Images/w4.jpg" height="200px" width="500px">
+                <p>Title:&nbsp;&nbsp;Mech Service</p>
+                <p>Technology:&nbsp;&nbsp; Android</p>
+                <p >In React, I created an image upload and management system with MongoDB and a pet care app called "My Pet Heaven" with Firebase authentication, Google Sign-In, booking slots, and email confirmations. .</p>
+            </div>
+        </div>
+      </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,133 @@
+#contact {
+    background: white;
+    padding-top: 100px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.e-cont {
+    margin-left: 100px;
+}
+
+.f {
+    border: 2px solid black;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 10px 25px black;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.f h1 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.f form {
+    display: flex;
+    flex-direction: column;
+}
+
+.f input[type="text"],
+.f textarea {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.f textarea {
+    resize: none;
+}
+
+.f button {
+    height: 50px;
+    width: 200px;
+    background-color: #00c6ff;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.f button:hover {
+    background-color: #009edb;
+}
+
+.circles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.circle-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: #00c6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle i {
+    font-size: 40px;
+    color: white;
+}
+
+.circle-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.foo {
+    width: 100%;
+    background-color: #00c6ff;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+footer h2, footer h4 {
+    color: white;
+    margin: 5px;
+}
+
+footer .ic {
+    margin-top: 10px;
+}
+
+footer .ic a {
+    margin: 0 10px;
+    font-size: 30px;
+    color: white;
+}
+
+footer .ic a:hover {
+    color: black;
+}

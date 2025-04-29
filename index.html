@@ -11,27 +11,53 @@
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="skills.css">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+      .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* High value to stay on top */
+  background-color: #000; /* or your color */
+  padding: 15px 30px;
+}
+
+   
+    </style>
 </head>
 <body>
     <section>
-        <nav>
-            <ul>
-                <li><img src="Images/image.png" height="60px" width="180px" style="position: relative; right: 500px; top:0px;  margin-bottom: 50px;"></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>  
-        <div class="image">
-            <div class="text">
-              <h1 style="font-size: 50px;"> I'm Pathan Karishma</h1>
-              <p style="font-size: 30px;"> Frontend web Developer</p>
-              <a href="#about" class="btn">Know Me More</a>
-            </div>
-          </div>
+      <nav>
+        <div class="navbar">
+          <img src="Images/image.png" alt="Logo" class="logo">
+          <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+  
+      <div class="image">
+        <div class="text">
+          <h1>Hi I'm Pathan Karishma</h1>
+          <p>Frontend Web Developer</p>
+          <a href="#about" class="btn">Know Me More</a>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('show');
+      }
+    
+  </script>
           
     
     </section>
@@ -79,7 +105,7 @@
         </div>
       </section>
       <section id="skills">
-        <h1 style="  font-size: 40px; margin-left: 700px;  position: relative; top: 100px; color: black;">Skills</h1>
+        <h1 class="skills-heading">Skills</h1>
        
         <div class="cc">
             <div class="card1">
@@ -95,30 +121,30 @@
             </div>
         </div>
       </section>
-        <section id="projects">
-            <h1 style="font-size: 40px; margin-left: 700px; color: black;  position: relative; top: 100px;">Projects</h1>
-            <div class="cc">
-                <div class="card1">
-                    <img src="Images/pro.png" height="200px" width="500px"><br>
-                    <p class="para">Title:&nbsp;&nbsp;Pet Care</p>
-                    <p class="para">Technology:&nbsp;&nbsp; React.js</p>
-                    <p class="para">In Angular,Lorem ipsum dolor silaudantium I developed proje, a stylish login/registration flow, a rice marketing portal connecting farmers and dealers, and</p>
-                </div>
-                <div class="card1">
-                    <img src="Images/and.png" height="200px" width="500px">
-                    <p class="para">Title:&nbsp;&nbsp;Rice Marketting</p>
-                    <p class="para">Technology:&nbsp;&nbsp; Angular</p>
-                    <p class="para">a mechanical services app that shows nearby mechanics based on location and vehicle type. On Android, I built a similar mechanical services app with ImageView navigation, location-based shop discovery, and a call feature using CardView.</p>
-                </div>
-                <div class="card1">
-                    <img src="Images/w4.jpg" height="200px" width="500px">
-                    <p class="para">Title:&nbsp;&nbsp;Mech Service</p>
-                    <p class="para">Technology:&nbsp;&nbsp; Android</p>
-                    <p class="para" >In React, I created an image upload and management system with MongoDB and a pet care app called "My Pet Heaven" with Firebase authentication, Google Sign-In, booking slots, and email confirmations. .</p>
-                </div>
-            </div>
-          </section> 
-         
+      <section id="projects">
+        <h1 class="section-title">Projects</h1>
+        <div class="cc">
+          <div class="card1">
+            <img src="Images/pro.png" alt="Pet Care Project">
+            <p class="para"><strong>Title:</strong> Pet Care</p>
+            <p class="para"><strong>Technology:</strong> React.js</p>
+            <p class="para">In Angular, I developed a stylish login/registration flow, a rice marketing portal connecting farmers and dealers, and more.</p>
+          </div>
+          <div class="card1">
+            <img src="Images/and.png" alt="Rice Marketing Project">
+            <p class="para"><strong>Title:</strong> Rice Marketing</p>
+            <p class="para"><strong>Technology:</strong> Angular</p>
+            <p class="para">A mechanical services app that shows nearby mechanics based on location and vehicle type, with call feature and CardView UI.</p>
+          </div>
+          <div class="card1">
+            <img src="Images/w4.jpg" alt="Mech Service Project">
+            <p class="para"><strong>Title:</strong> Mech Service</p>
+            <p class="para"><strong>Technology:</strong> Android</p>
+            <p class="para">Created an image upload system with MongoDB and Firebase login, Google Sign-In, slot booking, and email confirmations.</p>
+          </div>
+        </div>
+      </section>
+      
           <section id="contact">369-</section>
             <div class="contact-container">
               <div class="e-cont"></div>
